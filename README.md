@@ -28,15 +28,15 @@ At the most basic level, before OAuth 2.0 can be used, the Client must acquire i
 
 Using OAuth 2.0, access requests are initiated by the Client, e.g., a mobile app, website, smart TV app, desktop application, etc. The token request, exchange, and response follow this general flow:
 
-The Client requests authorization (authorization request) from the Authorization server, supplying the client id and secret to as identification; it also provides the scopes and an endpoint URI (redirect URI) to send the Access Token or the Authorization Code to.
+* The Client requests authorization (authorization request) from the Authorization server, supplying the client id and secret to as identification; it also provides the scopes and an endpoint URI (redirect URI) to send the Access Token or the Authorization Code to.
 
-The Authorization server authenticates the Client and verifies that the requested scopes are permitted.
+* The Authorization server authenticates the Client and verifies that the requested scopes are permitted.
 
-The Resource owner interacts with the Authorization server to grant access.
+* The Resource owner interacts with the Authorization server to grant access.
 
-The Authorization server redirects back to the Client with either an Authorization Code or Access Token, depending on the grant type, as it will be explained in the next section. A Refresh Token may also be returned.
+* The Authorization server redirects back to the Client with either an Authorization Code or Access Token, depending on the grant type, as it will be explained in the next section. A Refresh Token may also be returned.
 
-With the Access Token, the Client requests access to the resource from the Resource server.
+* With the Access Token, the Client requests access to the resource from the Resource server.
 
 ## Grant Types in OAuth 2.0
 In OAuth 2.0, grants are the set of steps a Client has to perform to get resource access authorization. The authorization framework provides several grant types to address different scenarios:
